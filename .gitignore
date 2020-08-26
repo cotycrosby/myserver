@@ -1,0 +1,7 @@
+/vendor/
+/.qidb/
+/.ftpquota
+/.well-known/
+/.cgi-bin/
+/sftp-config.json
+.htaccess
