@@ -5,3 +5,5 @@
 /.cgi-bin/
 /sftp-config.json
 .htaccess
+deploy.php
+error_log
