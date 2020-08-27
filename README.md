@@ -1,6 +1,8 @@
 ## Git Workflow steps
 ---
 
+This is the initial commit - the extra steps for webhooks. 
+
 The first step is to initialize the repository. I use a shared hosting plan on hostgator. I set up a production staging and development environment. I created the subdomains for development using the subdomain tool in cpanel.
 * Production is sitting at /home/user/public_html/
 * Development is at /home/user/subdomains/dev/cotycrosby.codes/
@@ -30,7 +32,7 @@ We will need 3 ssh keys in total. My computer, yours, and the servers. Git bash 
 * Adding myself to the repository.
 * Ensure that its private.
 
-### Initial commit
+### Initial commit 
 * SSH back into the server. 
 * CD into the public_html directory
 * Run `git init`. All primary development programs(git/composer) should already be installed on the server.
