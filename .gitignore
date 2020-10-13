@@ -7,3 +7,4 @@
 .htaccess
 deploy.php
 error_log
+/vendor/
