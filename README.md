@@ -2,7 +2,7 @@
 Currently working on workflow automation via github webhooks.
 ---
 
-This is the initial commit - the extra steps for webhooks. 
+This is the initial commit -asdfasdfasdf the extra steps for webhooks. 
 
 The first step is to initialize the repository. I use a shared hosting plan on hostgator. I set up a production staging and development environment. I created the subdomains for development using the subdomain tool in cpanel.
 * Production is sitting at /home/user/public_html/
