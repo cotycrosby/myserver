@@ -8,7 +8,7 @@
 <body>
 	<?php require_once('header.php'); ?>
 	<div class="container">
-		<h1>This is my cool new feature</h1>
+		<h1>This is my really, really cool new feature</h1>
 	</div>
 </body>
 </html>

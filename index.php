@@ -12,7 +12,10 @@
  <h1>Helooo</h1>
 	<p>Update</p>
 	<p>
-		Heres a <a href="newfeature.php">LINK</a> to the newest feature! DJ WAs here.
+		Heres a <a href="newfeature.php">LINK</a> to the newest feature! DJ was here.
+	</p>
+	<p>
+		This is a new paragraph.
 	</p>
  </div>
 	
