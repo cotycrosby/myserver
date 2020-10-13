@@ -1,0 +1,12 @@
+{
+    "name": "coty/myserver",
+    "authors": [
+        {
+            "name": "Coty Crosby",
+            "email": "coty.crosby@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^3.1"
+    }
+}
