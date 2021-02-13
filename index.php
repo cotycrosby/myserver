@@ -15,6 +15,8 @@
 	<p>
 		Heres a <a href="newfeature.php">LINK</a> to the newest feature! DJ WAs here.
 	</p>
+
+	newest thing!
  </div>
 	
 	
