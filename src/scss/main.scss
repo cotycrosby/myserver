@@ -1,0 +1,31 @@
+.hero-image {
+	background-image: linear-gradient(rgba($black, .6), rgba($black, .65)), url('/images/hero.jpg');
+	background-position: right top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: $white;
+}
+
+.button {
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+
+	background-color: $red;
+	color: $white;
+
+	&:hover {
+		transition: background-color .3s linear;
+		background-color: darken($red, 5%);
+	}
+
+	&.green {
+		background-color: $green;
+		color: $white;
+
+		&:hover {
+			background-color: darken($green, 5%);
+		}
+	}
+}
