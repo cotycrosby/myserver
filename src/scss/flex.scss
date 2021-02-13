@@ -11,3 +11,12 @@ $flex-positions: ( 'center': 'center', 'between': 'space-between', 'around': 'sp
 	.as-#{$keyword} { align-self: #{$position}; }
 }
 
+@each $container, $size in $container-list {
+	.flex-#{$container} {
+		display: block;
+	}
+
+	@media screen and (min-width: $size ) {
+		.flex-#{$container} { display: flex; }
+	}
+}

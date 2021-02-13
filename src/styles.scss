@@ -1,6 +1,78 @@
-@import '../node_modules/reset-css/sass/_reset.scss';
-@import './scss/globals';
-@import './scss/container';
-@import './scss/spacing';
-@import './scss/flex';
-@import './scss/main';
+
+@import './scss/variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.btn {
+	border-radius: 0;
+	border-bottom-width: 2px;
+	border-width: 2px;
+	transition: all .1s linear;
+
+	&.btn-success { 
+		color: $white; 
+		border-bottom-color: $green;
+
+		&:hover {
+			border-color: darken($green, 20%);
+		}
+	}
+
+	&.btn-primary:hover { background-color: lighten($blue, 20%);  }
+	&.btn-danger:hover { border-color: darken($red, 20%); }
+	
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.hero-image {
+	background: $gray-300;
+	background-image: linear-gradient(rgba($black, .5), rgba($black, .55)), url('/images/hero.jpg');
+	background-size: cover;
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+	color: $white;
+	@include flex-center;
+
+}
+
+.bg-black { background-color: $black; }
+
+.about-logo {
+	max-width: 100px;
+	width: 100%;
+	float: left;
+	margin-right: 1rem;
+
+	&.right {
+		float: right;
+		margin-right: 0;
+		margin-left: 1rem;
+	}
+}
+
+.skill-logo {
+	width: 100px;
+	padding: 0 5px;
+
+	&:not(:last-child) {
+		border-right: 1px solid $gray-200;
+	}
+}
+
+.blog {
+	max-width: 800px;
+	font-size: 20px;
+}
+
+.bg-red {
+	background: $red;
+	background-image: linear-gradient(to right, $red, darken($red, 25%));
+}

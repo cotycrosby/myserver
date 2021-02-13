@@ -8,3 +8,5 @@ deploy.php
 error_log
 .env
 node_modules
+/templates/compiled/
+/templates/cache/
