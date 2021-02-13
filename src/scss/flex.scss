@@ -1,0 +1,13 @@
+
+$flex-positions: ( 'center': 'center', 'between': 'space-between', 'around': 'space-around', 'start': 'start', 'end': 'end');
+
+.flex { display: flex; }
+
+.f-columns { flex-direction: column; }
+
+@each $keyword, $position in $flex-positions { 
+	.jc-#{$keyword} { justify-content: #{$position}; }
+	.ai-#{$keyword} { align-items: #{$position}; }
+	.as-#{$keyword} { align-self: #{$position}; }
+}
+

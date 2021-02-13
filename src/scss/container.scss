@@ -1,0 +1,55 @@
+
+$container-list: (
+	'sm': 600px,
+	'md': 900px,
+	'lg': 1200px
+);
+
+.container,
+.container-sm,
+.container-md,
+.container-lg {
+	max-width: 96%;
+	margin: 0 auto;
+}
+
+
+@for $i from 1 to 100 {
+	.w-#{$i} { width: #{$i * 1%}; }
+}
+
+$i: 0;
+@while $i <= 100 {
+	.w-#{$i} { width: #{$i * 1%}; }
+	.vh-#{$i} { min-height: #{$i * 1vh}; }
+	$i: $i + 5;
+}
+
+
+
+
+@each $container, $size in $container-list {
+	.container-#{$container} {
+		margin: 0 auto;
+		width: $size;
+	}
+
+	@media screen and (min-width: $size ) {
+		$i: 0;
+		@while $i <= 100 {
+			.w-#{$container}-#{$i} {
+				width: #{$i * 1% };
+			}
+			$i: $i + 5;
+		}
+	}
+
+}
+
+$alignments: left, right, center;
+
+@each $a in $alignments {
+	.text-#{$a} { text-align: $a; } 
+}
+
+

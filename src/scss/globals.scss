@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+body {
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.3;
+	
+}
+
+h1,h2,h3,h4,h5 {
+	font-weight: 100;
+}
+
+h1 { font-size: 5.5rem; }
+h2 { font-size: 4.5rem; }
+h3 { font-size: 3.5rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 1.5rem; }
+
+.border {
+	border: 1px solid #ccc;
+}
+
+$black: #050517;
+$white: #f5f5ff;
+$gray: #a5a5b5;
+$red: #CF5C36;
+$green: #65B891;
+
+$colors: ( 'black': $black, 'red': $red, 'green': $green, 'white': $white, 'gray': $gray );
+
+@each $color, $value in $colors {
+	.bg-#{$color} { background-color: $value; }
+	.#{$color} { color: $value; fill: $value; stroke: $value; }
+}
+
+.background-image {
+	background: $gray;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	&.parallax {
+		background-attachment: fixed;
+	}
+}
