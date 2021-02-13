@@ -9,3 +9,4 @@ deploy.php
 error_log
 /vendor/
 .env
+/node_modules/
