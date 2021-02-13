@@ -1,4 +1,3 @@
-/vendor/
 /.qidb/
 /.ftpquota
 /.well-known/
@@ -7,6 +6,7 @@
 .htaccess
 deploy.php
 error_log
-/vendor/
 .env
-/node_modules/
+node_modules
+/templates/compiled/
+/templates/cache/
